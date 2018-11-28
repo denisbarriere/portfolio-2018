@@ -15,9 +15,16 @@ export default class AppLayout extends PureComponent {
 }
 
 const AppFrame = styled.div`
-  margin-left: 2.5rem;
-  margin-right: 2.5rem;
   background-color: ${props => props.background};
   height: 100vh;
   overflow: hidden;
+
+  @media (min-width: 480px) {
+    margin-left: 1.25rem;
+    margin-right: 1.25rem;
+  }
+  @media (min-width: 768px) {
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+  }
 `;
