@@ -2,11 +2,11 @@ import styled from "styled-components";
 import { colors, transition } from "Utilities";
 
 export const HeaderWrapper = styled.header`
-  height: 3.125rem;
-  background-color: ${colors.white};
   display: flex;
+  height: 3.125rem;
   justify-content: space-between;
   align-items: center;
+  background-color: ${colors.white};
 
   @media (min-width: 768px) {
     height: 4.75rem;
@@ -23,21 +23,21 @@ export const Logo = styled.div`
   }
 
   > a {
+    display: inline-block;
     margin-left: 1.25rem;
+    padding: 0.5rem;
     height: 2.125rem;
     width: 2.125rem;
-    padding: 0.5rem;
     background-color: ${colors.black};
-    display: inline-block;
 
     @media (min-width: 480px) {
       margin-left: 2.5rem;
     }
     @media (min-width: 768px) {
       margin-left: 3.75rem;
+      padding: 1rem;
       height: 2.75rem;
       width: 2.75rem;
-      padding: 1rem;
     }
     @media (min-width: 1200px) {
       margin-left: 6.25rem;
@@ -46,10 +46,10 @@ export const Logo = styled.div`
 `;
 
 export const NavLinks = styled.nav`
-  text-align: center;
-  width: 6rem;
   display: flex;
+  width: 6rem;
   justify-content: space-between;
+  text-align: center;
 
   @media (min-width: 480px) {
     width: 8.75rem;
@@ -77,9 +77,9 @@ export const NavLinks = styled.nav`
 `;
 
 export const ContactLinks = styled.nav`
-  width: 4.5rem;
-  margin-right: 1.25rem;
   display: flex;
+  margin-right: 1.25rem;
+  width: 4.5rem;
   justify-content: space-between;
 
   @media (min-width: 480px) {
